@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Snake Game</h1>
+        <button id="startGame">Start Game</button>
+        <button id="settingsButton">Settings</button>
+    </div>
+    <div id="settings" style="display:none;">
+        <h2>Settings</h2>
+        <label for="snakeColor">Snake Color:</label>
+        <input type="color" id="snakeColor" value="#0000FF">
+        <br>
+        <label for="boardSize">Board Size:</label>
+        <select id="boardSize">
+            <option value="16">16x16</option>
+            <option value="32">32x32</option>
+        </select>
+        <br>
+        <label for="initialApples">Initial Apples:</label>
+        <input type="number" id="initialApples" min="1" max="6" value="1">
+        <br>
+        <button id="saveSettings">Save</button>
+    </div>
+    <div id="gameOver" style="display:none;">
+        <h2 id="gameOverMessage">Game Over</h2>
+        <p id="finalScore"></p>
+        <button id="restartGame">Start Again</button>
+        <button id="goToMenu">Return to Menu</button>
+    </div>
+    <div id="scoreBoard" style="display:none;">
+        <h2 id="scoreDisplay">Score: 0</h2>
+    </div>
+    <canvas id="gameCanvas" style="display:none;"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
