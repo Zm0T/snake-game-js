@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#menu, #settings, #gameOver {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+#gameCanvas {
+    background-color: #98FB98; /* Светло-зеленый фон */
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#scoreDisplay {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#settings {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#settings label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#settings select, #settings input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#settings button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
